@@ -3,6 +3,8 @@ import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 n = abs(number) % 10
+if number < 0:
+    n = -n
 str = ""
 if n > 5:
     str = "and is greater than 5"
