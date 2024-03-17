@@ -10,7 +10,7 @@ else:
     print("arguments", end='')
 
 
-if nargs <= 2:
+if nargs == 1:
     print(".")
 else:
     print(":")
