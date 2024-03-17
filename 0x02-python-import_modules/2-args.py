@@ -3,14 +3,14 @@ if __name__ == "__main__":
     from sys import argv
 nargs = len(argv)
 
-print("{}".format(nargs), end=' ')
+print("{}".format(nargs - 1), end=' ')
 if nargs == 2:
     print("argument", end='')
 else:
     print("arguments", end='')
 
 
-if nargs == 1:
+if nargs <= 2:
     print(".")
 else:
     print(":")
