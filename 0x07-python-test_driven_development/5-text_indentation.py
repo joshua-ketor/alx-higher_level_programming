@@ -19,7 +19,7 @@ def text_indentation(text):
             print(char)
             print()
             space_on_end = True
-        elif space_on_end == True and char == ' ':
+        elif space_on_end and char == ' ':
             space_on_end = False
         else:
             print(char, end='')
