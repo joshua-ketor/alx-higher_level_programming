@@ -1,0 +1,18 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation('how. are. you')
+how.
+<BLANKLINE>
+are.
+<BLANKLINE>
+you
+>>> text_indentation(2)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> text_indentation('e..') #doctest: +REPORT_NDIFF
+e.
+<BLANKLINE>
+.
+<BLANKLINE>
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
