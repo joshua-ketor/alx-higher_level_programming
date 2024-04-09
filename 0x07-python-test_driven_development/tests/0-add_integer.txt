@@ -1,0 +1,27 @@
+=====================
+Test for 0-add_integer
+======================
+
+The add_integer takes two integer arguments and returns the sum
+
+Importing the add_integer function
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Adding a float with an integer
+>>> add_integer(1.5, 3)
+4
+
+Adding 0 and a negative number
+>>> add_integer(0, -1)
+-1
+
+Adding a string with a number
+>>> add_integer('e', 2)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Adding a number that is more than max number an int or float can hold
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
