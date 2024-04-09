@@ -1,0 +1,35 @@
+Test for print_quare function
+=============================
+
+Importing the print_square function
+    >>> print_square = __import__('4-print_square').print_square
+
+Printing a square of size 4
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+print a square of size 0
+    >>> print_square(0)
+
+printing a square of size -1.Error
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+printing a square of size of type 'str'
+    >>> print_square('e')
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+printing a square with size as None
+    >>> print_square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+printing a square with size as float
+    >>> print_square(2.5)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
